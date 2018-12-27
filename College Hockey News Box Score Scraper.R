@@ -91,6 +91,10 @@ get_schedule <- function(league, season, ..., progress = TRUE) {
   
 }
 
+## Gets URLs for games from 2016-17 to 2018-19
+## Change as necessary
+games <- get_schedule("NCAA", 2017:2019)
+
 ## Gets Box Score Scoring Summaries for URLs (retrieved from get_schedule())
 get_box_score <- function(..., progress = TRUE) {
   
@@ -187,4 +191,5 @@ get_box_score <- function(..., progress = TRUE) {
   
 }
 
+## Gets scoring data for games from 2016-17 to 2018-19
 scoring_data <- get_box_score(games)
